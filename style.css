@@ -61,7 +61,6 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: var(--clr-neon);
   box-shadow: 0 0 2em 0.5em var(--clr-neon);
   opacity: 0;
   transition: opacity 100ms linear;
@@ -70,11 +69,13 @@ body {
 
 .neon-btn:hover,
 .neon-btn:focus {
+  background: var(--clr-neon);
   color: var(--clr-bg);
   text-shadow: none;
 }
 
-.neon-btn:hover::after {
+.neon-btn:hover::after,
+.neon-btn:focus::after {
   opacity: 1;
 }
 
